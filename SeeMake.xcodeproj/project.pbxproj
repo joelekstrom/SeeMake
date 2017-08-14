@@ -1,0 +1,335 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5D5162A61F41CD4B000670DC /* CMakeExpression.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5162A51F41CD4B000670DC /* CMakeExpression.m */; };
+		5DF7A1221F386F72002F39CB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DF7A1211F386F72002F39CB /* AppDelegate.m */; };
+		5DF7A1251F386F72002F39CB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DF7A1241F386F72002F39CB /* main.m */; };
+		5DF7A1281F386F72002F39CB /* OutlineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DF7A1271F386F72002F39CB /* OutlineViewController.m */; };
+		5DF7A12A1F386F72002F39CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DF7A1291F386F72002F39CB /* Assets.xcassets */; };
+		5DF7A12D1F386F72002F39CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DF7A12B1F386F72002F39CB /* Main.storyboard */; };
+		5DF7A1361F389799002F39CB /* CMakeProject.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DF7A1351F389799002F39CB /* CMakeProject.m */; };
+		5DF7A1411F39163E002F39CB /* cmListFileLexer.c in Sources */ = {isa = PBXBuildFile; fileRef = 5DF7A13F1F39163E002F39CB /* cmListFileLexer.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5D5162A41F41CD4B000670DC /* CMakeExpression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMakeExpression.h; sourceTree = "<group>"; };
+		5D5162A51F41CD4B000670DC /* CMakeExpression.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMakeExpression.m; sourceTree = "<group>"; };
+		5DF7A11D1F386F72002F39CB /* SeeMake.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeeMake.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DF7A1201F386F72002F39CB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5DF7A1211F386F72002F39CB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5DF7A1241F386F72002F39CB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5DF7A1261F386F72002F39CB /* OutlineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OutlineViewController.h; sourceTree = "<group>"; };
+		5DF7A1271F386F72002F39CB /* OutlineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OutlineViewController.m; sourceTree = "<group>"; };
+		5DF7A1291F386F72002F39CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5DF7A12C1F386F72002F39CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5DF7A12E1F386F72002F39CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5DF7A1341F389799002F39CB /* CMakeProject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMakeProject.h; sourceTree = "<group>"; };
+		5DF7A1351F389799002F39CB /* CMakeProject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMakeProject.m; sourceTree = "<group>"; };
+		5DF7A13F1F39163E002F39CB /* cmListFileLexer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = cmListFileLexer.c; path = ../../../CMake/cmListFileLexer.c; sourceTree = "<group>"; };
+		5DF7A1401F39163E002F39CB /* cmListFileLexer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cmListFileLexer.h; path = ../../../CMake/cmListFileLexer.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5DF7A11A1F386F72002F39CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5DF7A1141F386F72002F39CB = {
+			isa = PBXGroup;
+			children = (
+				5DF7A11F1F386F72002F39CB /* SeeMake */,
+				5DF7A11E1F386F72002F39CB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5DF7A11E1F386F72002F39CB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5DF7A11D1F386F72002F39CB /* SeeMake.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5DF7A11F1F386F72002F39CB /* SeeMake */ = {
+			isa = PBXGroup;
+			children = (
+				5DF7A1201F386F72002F39CB /* AppDelegate.h */,
+				5DF7A1211F386F72002F39CB /* AppDelegate.m */,
+				5DF7A1261F386F72002F39CB /* OutlineViewController.h */,
+				5DF7A1271F386F72002F39CB /* OutlineViewController.m */,
+				5DF7A1341F389799002F39CB /* CMakeProject.h */,
+				5DF7A1351F389799002F39CB /* CMakeProject.m */,
+				5D5162A41F41CD4B000670DC /* CMakeExpression.h */,
+				5D5162A51F41CD4B000670DC /* CMakeExpression.m */,
+				5DF7A13E1F391621002F39CB /* CMakeList Lexer */,
+				5DF7A1291F386F72002F39CB /* Assets.xcassets */,
+				5DF7A12B1F386F72002F39CB /* Main.storyboard */,
+				5DF7A12E1F386F72002F39CB /* Info.plist */,
+				5DF7A1231F386F72002F39CB /* Supporting Files */,
+			);
+			path = SeeMake;
+			sourceTree = "<group>";
+		};
+		5DF7A1231F386F72002F39CB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5DF7A1241F386F72002F39CB /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5DF7A13E1F391621002F39CB /* CMakeList Lexer */ = {
+			isa = PBXGroup;
+			children = (
+				5DF7A1401F39163E002F39CB /* cmListFileLexer.h */,
+				5DF7A13F1F39163E002F39CB /* cmListFileLexer.c */,
+			);
+			name = "CMakeList Lexer";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5DF7A11C1F386F72002F39CB /* SeeMake */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5DF7A1311F386F72002F39CB /* Build configuration list for PBXNativeTarget "SeeMake" */;
+			buildPhases = (
+				5DF7A1191F386F72002F39CB /* Sources */,
+				5DF7A11A1F386F72002F39CB /* Frameworks */,
+				5DF7A11B1F386F72002F39CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SeeMake;
+			productName = SeeMake;
+			productReference = 5DF7A11D1F386F72002F39CB /* SeeMake.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5DF7A1151F386F72002F39CB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Joel Ekström";
+				TargetAttributes = {
+					5DF7A11C1F386F72002F39CB = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 5RNJHF933P;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 5DF7A1181F386F72002F39CB /* Build configuration list for PBXProject "SeeMake" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5DF7A1141F386F72002F39CB;
+			productRefGroup = 5DF7A11E1F386F72002F39CB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5DF7A11C1F386F72002F39CB /* SeeMake */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5DF7A11B1F386F72002F39CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DF7A12A1F386F72002F39CB /* Assets.xcassets in Resources */,
+				5DF7A12D1F386F72002F39CB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5DF7A1191F386F72002F39CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DF7A1281F386F72002F39CB /* OutlineViewController.m in Sources */,
+				5DF7A1361F389799002F39CB /* CMakeProject.m in Sources */,
+				5D5162A61F41CD4B000670DC /* CMakeExpression.m in Sources */,
+				5DF7A1251F386F72002F39CB /* main.m in Sources */,
+				5DF7A1221F386F72002F39CB /* AppDelegate.m in Sources */,
+				5DF7A1411F39163E002F39CB /* cmListFileLexer.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5DF7A12B1F386F72002F39CB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5DF7A12C1F386F72002F39CB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5DF7A12F1F386F72002F39CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		5DF7A1301F386F72002F39CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		5DF7A1321F386F72002F39CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 5RNJHF933P;
+				INFOPLIST_FILE = SeeMake/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ekstrom.SeeMake;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5DF7A1331F386F72002F39CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 5RNJHF933P;
+				INFOPLIST_FILE = SeeMake/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ekstrom.SeeMake;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5DF7A1181F386F72002F39CB /* Build configuration list for PBXProject "SeeMake" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DF7A12F1F386F72002F39CB /* Debug */,
+				5DF7A1301F386F72002F39CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5DF7A1311F386F72002F39CB /* Build configuration list for PBXNativeTarget "SeeMake" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DF7A1321F386F72002F39CB /* Debug */,
+				5DF7A1331F386F72002F39CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5DF7A1151F386F72002F39CB /* Project object */;
+}
