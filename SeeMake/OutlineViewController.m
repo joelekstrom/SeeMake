@@ -7,6 +7,7 @@
 //
 
 #import "OutlineViewController.h"
+#import "TargetViewController.h"
 #import "CMakeProject.h"
 
 @interface OutlineViewController() <NSOutlineViewDataSource, NSOutlineViewDelegate>
@@ -54,6 +55,7 @@
         self.project = [[CMakeProject alloc] initWithURL:rootFolderURL];
         self.executableExpressions = [self.project.expressions filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"identifier == 'add_executable'"]];
         [self.outlineView reloadData];
+        [self.outlineView selectRowIndexes:[NSIndexSet indexSetWithIndex:1] byExtendingSelection:NO];
     }
 }
 
@@ -117,5 +119,18 @@
     }
 }
 
+- (void)outlineViewSelectionDidChange:(NSNotification *)notification
+{
+    id selectedItem = [self.outlineView itemAtRow:[self.outlineView selectedRow]];
+    if ([selectedItem isKindOfClass:[CMakeExpression class]]) {
+        TargetViewController *targetViewController = [self.storyboard instantiateControllerWithIdentifier:@"TargetViewController"];
+        targetViewController.target = selectedItem;
+        targetViewController.baseURL = self.rootFolderURL;
+
+        NSSplitViewController *parentSplitViewController = (NSSplitViewController *)self.parentViewController;
+        [parentSplitViewController removeSplitViewItem:parentSplitViewController.splitViewItems.lastObject];
+        [parentSplitViewController addSplitViewItem:[NSSplitViewItem splitViewItemWithViewController:targetViewController]];
+    }
+}
 
 @end

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5D5162A61F41CD4B000670DC /* CMakeExpression.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5162A51F41CD4B000670DC /* CMakeExpression.m */; };
+		5D5162AC1F41F1D0000670DC /* TargetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5162AB1F41F1D0000670DC /* TargetViewController.m */; };
 		5DF7A1221F386F72002F39CB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DF7A1211F386F72002F39CB /* AppDelegate.m */; };
 		5DF7A1251F386F72002F39CB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DF7A1241F386F72002F39CB /* main.m */; };
 		5DF7A1281F386F72002F39CB /* OutlineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DF7A1271F386F72002F39CB /* OutlineViewController.m */; };
@@ -20,6 +21,8 @@
 /* Begin PBXFileReference section */
 		5D5162A41F41CD4B000670DC /* CMakeExpression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMakeExpression.h; sourceTree = "<group>"; };
 		5D5162A51F41CD4B000670DC /* CMakeExpression.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMakeExpression.m; sourceTree = "<group>"; };
+		5D5162AA1F41F1D0000670DC /* TargetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TargetViewController.h; sourceTree = "<group>"; };
+		5D5162AB1F41F1D0000670DC /* TargetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TargetViewController.m; sourceTree = "<group>"; };
 		5DF7A11D1F386F72002F39CB /* SeeMake.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeeMake.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DF7A1201F386F72002F39CB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5DF7A1211F386F72002F39CB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -69,6 +72,8 @@
 				5DF7A1211F386F72002F39CB /* AppDelegate.m */,
 				5DF7A1261F386F72002F39CB /* OutlineViewController.h */,
 				5DF7A1271F386F72002F39CB /* OutlineViewController.m */,
+				5D5162AA1F41F1D0000670DC /* TargetViewController.h */,
+				5D5162AB1F41F1D0000670DC /* TargetViewController.m */,
 				5DF7A1341F389799002F39CB /* CMakeProject.h */,
 				5DF7A1351F389799002F39CB /* CMakeProject.m */,
 				5D5162A41F41CD4B000670DC /* CMakeExpression.h */,
@@ -171,6 +176,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5DF7A1281F386F72002F39CB /* OutlineViewController.m in Sources */,
+				5D5162AC1F41F1D0000670DC /* TargetViewController.m in Sources */,
 				5DF7A1361F389799002F39CB /* CMakeProject.m in Sources */,
 				5D5162A61F41CD4B000670DC /* CMakeExpression.m in Sources */,
 				5DF7A1251F386F72002F39CB /* main.m in Sources */,
