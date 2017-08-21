@@ -8,18 +8,24 @@
 
 #import "OutlineViewController.h"
 #import "TargetViewController.h"
+#import "CreateViewController.h"
 #import "CMakeProject.h"
 
-@interface OutlineViewController() <NSOutlineViewDataSource, NSOutlineViewDelegate>
+@interface OutlineViewController() <NSOutlineViewDataSource, NSOutlineViewDelegate, NSTextFieldDelegate>
 
 @property (nonatomic, strong) NSURL *rootFolderURL;
 @property (nonatomic, strong) NSDictionary *folderCache;
 
 @property (nonatomic, weak) IBOutlet NSPathControl *pathControl;
 @property (nonatomic, weak) IBOutlet NSOutlineView *outlineView;
+@property (nonatomic, weak) NSTableCellView *selectedCell;
+@property (nonatomic, weak) IBOutlet NSView *emptyProjectView;
+@property (nonatomic, weak) IBOutlet NSButton *addTargetButton;
 
 @property (nonatomic, strong) CMakeProject *project;
 @property (nonatomic, strong) NSArray<CMakeExpression *> *executableExpressions;
+
+@property (nonatomic, assign) NSTextField *textFieldBeingEdited;
 
 @end
 
@@ -27,6 +33,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.rootFolderURL = self.pathControl.URL;
 }
 
 - (IBAction)pathControlClicked:(NSPathControl *)sender
@@ -50,13 +57,67 @@
 {
     _rootFolderURL = rootFolderURL;
     self.pathControl.URL = rootFolderURL;
+    BOOL projectExists = [CMakeProject projectExistsAtURL:rootFolderURL];
 
-    if ([CMakeProject projectExistsAtURL:rootFolderURL]) {
+    if (projectExists) {
         self.project = [[CMakeProject alloc] initWithURL:rootFolderURL];
-        self.executableExpressions = [self.project.expressions filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"identifier == 'add_executable'"]];
+    } else {
+        self.project = nil;
+    }
+}
+
+- (void)setProject:(CMakeProject *)project
+{
+    _project = project;
+    self.outlineView.hidden = project == nil;
+    self.emptyProjectView.hidden = project != nil;
+    self.addTargetButton.hidden = project == nil;
+
+    if (project) {
+        [self findTargets];
         [self.outlineView reloadData];
         [self.outlineView selectRowIndexes:[NSIndexSet indexSetWithIndex:1] byExtendingSelection:NO];
     }
+}
+
+- (void)dismissViewController:(NSViewController *)viewController
+{
+    [super dismissViewController:viewController];
+    if ([viewController isKindOfClass:[CreateViewController class]]) {
+        CreateViewController *createViewController = (CreateViewController *)viewController;
+        if (createViewController.nameTextField.stringValue.length > 0) {
+            [self createProjectWithName:createViewController.nameTextField.stringValue];
+        }
+    }
+}
+
+- (void)createProjectWithName:(NSString *)name
+{
+    CMakeProject *project = [CMakeProject new];
+    project.name = name;
+    self.project = project;
+}
+
+- (IBAction)addTarget:(id)sender
+{
+    CMakeExpression *expression = [[CMakeExpression alloc] init];
+    expression.identifier = @"add_executable";
+    expression.arguments = @[@"Target"];
+    [self.project addExpression:expression];
+    [self findTargets];
+    [self.outlineView reloadData];
+
+    NSInteger row = [self.outlineView rowForItem:expression];
+    [self.outlineView selectRowIndexes:[NSIndexSet indexSetWithIndex:row] byExtendingSelection:NO];
+
+    NSTableCellView *cellView = [self.outlineView viewAtColumn:0 row:row makeIfNecessary:YES];
+    [cellView.textField becomeFirstResponder];
+    [cellView.textField selectText:self];
+}
+
+- (void)findTargets
+{
+    self.executableExpressions = [self.project.expressions filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"identifier == 'add_executable'"]];
 }
 
 #pragma mark - NSOutlineViewDataSource
@@ -115,6 +176,7 @@
         NSTableCellView *targetCell = [outlineView makeViewWithIdentifier:@"TargetCell" owner:self];
         CMakeExpression *expression = (CMakeExpression *)item;
         targetCell.textField.stringValue = expression.arguments.firstObject;
+        targetCell.textField.delegate = self;
         return targetCell;
     }
 }

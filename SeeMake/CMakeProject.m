@@ -12,7 +12,6 @@
 
 @interface CMakeProject()
 
-@property (nonatomic, strong) NSString *name;
 @property (nonatomic, strong) NSArray<CMakeExpression *> *expressions;
 
 @end
@@ -33,6 +32,15 @@
     return self;
 }
 
+- (void)addExpression:(CMakeExpression *)expression
+{
+    if (self.expressions == nil) {
+        self.expressions = @[expression];
+    } else {
+        self.expressions = [self.expressions arrayByAddingObject:expression];
+    }
+}
+
 - (void)parseFileAtURL:(NSURL *)fileURL
 {
     NSString *path = fileURL.path;
@@ -44,7 +52,7 @@
     self.expressions = @[];
     CMakeExpression *expression = nil;
     while ((expression = [self parseExpressionWithLexer:lexer])) {
-        self.expressions = [self.expressions arrayByAddingObject:expression];
+        [self addExpression:expression];
     }
 }
 

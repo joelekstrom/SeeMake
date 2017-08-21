@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5D0344711F4B128C0050DE76 /* CreateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D0344701F4B128C0050DE76 /* CreateViewController.m */; };
 		5D5162A61F41CD4B000670DC /* CMakeExpression.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5162A51F41CD4B000670DC /* CMakeExpression.m */; };
 		5D5162AC1F41F1D0000670DC /* TargetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5162AB1F41F1D0000670DC /* TargetViewController.m */; };
 		5DF7A1221F386F72002F39CB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DF7A1211F386F72002F39CB /* AppDelegate.m */; };
@@ -19,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5D03446F1F4B128C0050DE76 /* CreateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateViewController.h; sourceTree = "<group>"; };
+		5D0344701F4B128C0050DE76 /* CreateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateViewController.m; sourceTree = "<group>"; };
 		5D5162A41F41CD4B000670DC /* CMakeExpression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMakeExpression.h; sourceTree = "<group>"; };
 		5D5162A51F41CD4B000670DC /* CMakeExpression.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMakeExpression.m; sourceTree = "<group>"; };
 		5D5162AA1F41F1D0000670DC /* TargetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TargetViewController.h; sourceTree = "<group>"; };
@@ -72,6 +75,8 @@
 				5DF7A1211F386F72002F39CB /* AppDelegate.m */,
 				5DF7A1261F386F72002F39CB /* OutlineViewController.h */,
 				5DF7A1271F386F72002F39CB /* OutlineViewController.m */,
+				5D03446F1F4B128C0050DE76 /* CreateViewController.h */,
+				5D0344701F4B128C0050DE76 /* CreateViewController.m */,
 				5D5162AA1F41F1D0000670DC /* TargetViewController.h */,
 				5D5162AB1F41F1D0000670DC /* TargetViewController.m */,
 				5DF7A1341F389799002F39CB /* CMakeProject.h */,
@@ -179,6 +184,7 @@
 				5D5162AC1F41F1D0000670DC /* TargetViewController.m in Sources */,
 				5DF7A1361F389799002F39CB /* CMakeProject.m in Sources */,
 				5D5162A61F41CD4B000670DC /* CMakeExpression.m in Sources */,
+				5D0344711F4B128C0050DE76 /* CreateViewController.m in Sources */,
 				5DF7A1251F386F72002F39CB /* main.m in Sources */,
 				5DF7A1221F386F72002F39CB /* AppDelegate.m in Sources */,
 				5DF7A1411F39163E002F39CB /* cmListFileLexer.c in Sources */,

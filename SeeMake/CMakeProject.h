@@ -11,11 +11,12 @@
 
 @interface CMakeProject : NSObject
 
-@property (nonatomic, readonly) NSString *name;
+@property (nonatomic, copy) NSString *name;
 @property (nonatomic, readonly) NSArray<CMakeExpression *> *expressions;
 
 
 - (instancetype)initWithURL:(NSURL *)URL;
+- (void)addExpression:(CMakeExpression *)expression;
 
 + (BOOL)projectExistsAtURL:(NSURL *)URL;
 
